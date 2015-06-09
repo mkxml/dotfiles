@@ -32,6 +32,9 @@ brew install bash
 brew tap homebrew/versions
 brew install bash-completion2
 
+# Install zsh
+brew install zsh
+
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
@@ -82,12 +85,17 @@ brew install xz
 
 # Install other useful binaries.
 brew install ack
+brew install android-ndk
+brew install android-platform-tools
+brew install android-sdk
 brew install dark-mode
 #brew install exiv2
+brew install ffmpeg
 brew install git
 brew install git-lfs
 brew install imagemagick --with-webp
 brew install lua
+brew install libbpg
 brew install lynx
 brew install p7zip
 brew install pigz
@@ -100,5 +108,34 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 
+# Install Node.JS and NPM
+brew install node
+
+# Install brew cask to install some GUI-based apps later
+brew install caskroom/cask/brew-cask
+
+# Install some useful GUI-based apps
+brew cask install adobe-creative-cloud
+brew cask install alfred
+brew cask install android-studio
+brew cask install appcleaner
+brew cask install atom
+brew cask install clion
+brew cask install cocos-code-ide
+brew cask install dropbox
+brew cask install eclipse-java
+brew cask install filezilla
+brew cask install firefox
+brew cask install google-chrome
+brew cask install java
+brew cask install libreoffice
+brew cask install moom
+brew cask install opera
+brew cask install skype
+brew cask install spotify
+brew cask install sublime-text
+
+
 # Remove outdated versions from the cellar.
 brew cleanup
+brew cask cleanup
