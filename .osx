@@ -137,14 +137,14 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 sudo tmutil disablelocal
 
 # Disable hibernation (speeds up entering sleep mode)
-sudo pmset -a hibernatemode 0
+#sudo pmset -a hibernatemode 0
 
 # Remove the sleep image file to save disk space
-sudo rm /private/var/vm/sleepimage
+#sudo rm /private/var/vm/sleepimage
 # Create a zero-byte file instead…
-sudo touch /private/var/vm/sleepimage
+#sudo touch /private/var/vm/sleepimage
 # …and make sure it can’t be rewritten
-sudo chflags uchg /private/var/vm/sleepimage
+#sudo chflags uchg /private/var/vm/sleepimage
 
 # Disable the sudden motion sensor as it’s not useful for SSDs
 #sudo pmset -a sms 0
@@ -566,7 +566,7 @@ sudo mdutil -E / > /dev/null
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
-# Use the Dracula theme by default in Terminal.app
+# Use the Solarized theme by default in Terminal.app
 osascript <<EOD
 
 tell application "Terminal"
@@ -574,7 +574,7 @@ tell application "Terminal"
 	local allOpenedWindows
 	local initialOpenedWindows
 	local windowID
-	set themeName to "Dracula"
+	set themeName to "Solarized Dark xterm-256color"
 
 	(* Store the IDs of all the open terminal windows. *)
 	set initialOpenedWindows to id of every window
@@ -737,11 +737,18 @@ defaults write com.operasoftware.Opera PMPrintingExpandedStateForPrint2 -boolean
 defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2 -boolean true
 
 ###############################################################################
+# Atom Editor                                                                 #
+###############################################################################
+
+# Sync Atom Editor settings and plugins from Dropbox
+ln -s ~/Dropbox/ATOM/atomconfig/.atom ~/.atom 2> /dev/null
+
+###############################################################################
 # Sublime Text                                                                #
 ###############################################################################
 
-# Install Sublime Text settings
-cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+# Sync Sublime Text settings and packages from Dropbox
+ln -s ~/Dropbox/Sublime/User ~/Library/Application\ Support/Sublime\ Text*/Packages/User 2> /dev/null
 
 ###############################################################################
 # Transmission.app                                                            #
