@@ -32,9 +32,6 @@ brew install bash
 brew tap homebrew/versions
 brew install bash-completion2
 
-# Install zsh
-brew install zsh
-
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
@@ -111,6 +108,9 @@ brew install zopfli
 # Install Node.JS and NPM
 brew install node
 
+# Install pip
+brew install pip
+
 # Install brew cask to install some GUI-based apps later
 brew install caskroom/cask/brew-cask
 
@@ -135,7 +135,10 @@ brew cask install skype
 brew cask install spotify
 brew cask install sublime-text
 
-
 # Remove outdated versions from the cellar.
 brew cleanup
 brew cask cleanup
+
+# Reboot the machine
+echo "Rebooting machine in 10 seconds..."
+sudo shutdown -r -t 10
