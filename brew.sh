@@ -111,9 +111,6 @@ brew install zopfli
 # Install Node.JS and NPM
 brew install node
 
-# Install pip
-brew install pip
-
 # Install brew cask to install some GUI-based apps later
 brew install caskroom/cask/brew-cask
 
