@@ -86,6 +86,8 @@ brew install android-ndk
 brew install android-platform-tools
 brew install android-sdk
 brew install dark-mode
+brew install erlang
+brew install elixir
 #brew install exiv2
 brew install ffmpeg
 brew install git
@@ -97,6 +99,7 @@ brew install lynx
 brew install p7zip
 brew install pigz
 brew install pv
+brew install rebar
 brew install rename
 brew install rhino
 brew install speedtest_cli
@@ -140,5 +143,5 @@ brew cleanup
 brew cask cleanup
 
 # Reboot the machine
-echo "Rebooting machine in 10 seconds..."
-sudo shutdown -r -t 10
+echo "Rebooting machine..."
+sudo shutdown -r now
