@@ -1,3 +1,9 @@
-# Automatically normalize line endings for all text-based files
-#* text=auto
-# Disabled because of https://github.com/mathiasbynens/dotfiles/issues/149 :(
+# Use only Unix line feeds
+*.css    text eol=lf
+*.html   text eol=lf
+*.coffee text eol=lf
+*.js     text eol=lf
+*.json   text eol=lf
+*.scss   text eol=lf
+*.md     text eol=lf
+*.yml    text eol=lf
