@@ -127,6 +127,7 @@ brew cask install eclipse-java
 brew cask install filezilla
 brew cask install firefox
 brew cask install google-chrome
+brew cask install google-chrome-canary
 brew cask install java
 brew cask install libreoffice
 brew cask install moom
@@ -134,6 +135,7 @@ brew cask install opera
 brew cask install skype
 brew cask install spotify
 brew cask install sublime-text
+brew cask install virtualbox
 
 # Remove outdated versions from the cellar.
 brew cleanup
