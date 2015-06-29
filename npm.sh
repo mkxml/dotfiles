@@ -2,19 +2,19 @@
 
 sudo -v
 
-sudo npm install bower
-sudo npm install coffee-script
-sudo npm install coffeelint
-sudo npm install cordova
-sudo npm install csslint
-sudo npm install docpad
-sudo npm install express
-sudo npm install grunt-cli
-sudo npm install htmlhint
-sudo npm install jshint
-sudo npm install mocha
-sudo npm install plato
-sudo npm install supervisor
-sudo npm install uglify-js
-sudo npm install vtop
-sudo npm install yo
+sudo npm install -g bower
+sudo npm install -g coffee-script
+sudo npm install -g coffeelint
+sudo npm install -g cordova
+sudo npm install -g csslint
+sudo npm install -g docpad
+sudo npm install -g express
+sudo npm install -g grunt-cli
+sudo npm install -g htmlhint
+sudo npm install -g jshint
+sudo npm install -g mocha
+sudo npm install -g plato
+sudo npm install -g supervisor
+sudo npm install -g uglify-js
+sudo npm install -g vtop
+sudo npm install -g yo
