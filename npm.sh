@@ -5,6 +5,7 @@ sudo -v
 sudo npm install bower
 sudo npm install coffee-script
 sudo npm install coffeelint
+sudo npm install cordova
 sudo npm install csslint
 sudo npm install docpad
 sudo npm install express
