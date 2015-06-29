@@ -8,6 +8,30 @@ These are my dotfiles that I use when setting up a new machine or when restoring
 
 I made this repo very personal so I wouldn't suggest you to fork this repo. Instead fork Mathias' one, as it is designed for customization.
 
+## Running script on a new machine
+
+`git clone https://github.com/mkautzmann/dotfiles.git && cd dotfiles && source bootstrap.sh`
+
+The OSX defaults
+
+`./.osx`
+
+Brew
+
+`./brew.sh`
+
+NPM
+
+`./npm.sh`
+
+Gems
+
+`./gems.sh`
+
+PIP
+
+`./pip.sh`
+
 ## If you decide to fork this repo
 
 If you are forking my repo instead of the original one remember to change the `.extras` file, there I specify the author (myself) of the commits to git.
