@@ -2,6 +2,7 @@
 
 sudo -v
 
+sudo npm install -g babel
 sudo npm install -g bower
 sudo npm install -g browserify
 sudo npm install -g coffee-script
