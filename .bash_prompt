@@ -64,15 +64,16 @@ bold=$(tput bold);
 reset=$(tput sgr0);
 # Dracula colors
 black=$(tput setaf 0);
-blue=$(tput setaf 33);
-cyan=$(tput setaf 51);
-green=$(tput setaf 47);
-orange=$(tput setaf 215);
-purple=$(tput setaf 129);
-red=$(tput setaf 196);
+blue=$(tput setaf 12);
+cyan=$(tput setaf 14);
+green=$(tput setaf 10);
+orange=$(tput setaf 217);
+purple=$(tput setaf 13);
+red=$(tput setaf 1);
 violet=$(tput setaf 61);
+gray=$(tput setaf 7);
 white=$(tput setaf 15);
-yellow=$(tput setaf 229);
+yellow=$(tput setaf 11);
 
 # Highlight the user name when logged in as root.
 if [[ "${USER}" == "root" ]]; then
@@ -92,13 +93,13 @@ fi;
 PS1="\[\033]0;\w\007\]";
 PS1+="\[${bold}\]\n"; # newline
 PS1+="\[${userStyle}\]\u"; # username
-PS1+="\[${white}\] at ";
+PS1+="\[${gray}\] at ";
 PS1+="\[${hostStyle}\]\h"; # host
-PS1+="\[${white}\] in ";
-PS1+="\[${green}\]\w"; # working directory
-PS1+="\$(prompt_git \"${white} on ${violet}\")"; # Git repository details
+PS1+="\[${gray}\] in ";
+PS1+="\[${purple}\]\w"; # working directory
+PS1+="\$(prompt_git \"${gray} on ${cyan}\")"; # Git repository details
 PS1+="\n";
-PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
+PS1+="\[${gray}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;
 
 PS2="\[${yellow}\]→ \[${reset}\]";
