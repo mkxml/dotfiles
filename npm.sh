@@ -3,6 +3,7 @@
 sudo -v
 
 sudo npm install -g bower
+sudo npm install -g browserify
 sudo npm install -g coffee-script
 sudo npm install -g coffeelint
 sudo npm install -g cordova
