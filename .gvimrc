@@ -1,6 +1,6 @@
-" Use the Solarized Dark theme
+" Use the Dracula theme
 set background=dark
-colorscheme solarized
+colorscheme dracula
 " Use 14pt Monaco
 set guifont=Monaco:h14
 " Don’t blink cursor in normal mode

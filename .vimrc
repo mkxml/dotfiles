@@ -1,7 +1,6 @@
-" Use the Solarized Dark theme
+" Use the Dracula theme
 set background=dark
-colorscheme solarized
-let g:solarized_termtrans=1
+colorscheme dracula
 
 " Make Vim more useful
 set nocompatible
