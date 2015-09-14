@@ -7,3 +7,6 @@ git config --global user.name "$GIT_AUTHOR_NAME"
 GIT_AUTHOR_EMAIL="kautzmann5@gmail.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
+
+# Special settings for my firewall, allowing only HTTPS (443) GitHub connections
+git config --global url.https://github.com/.insteadOf git://github.com/
