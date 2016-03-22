@@ -10,6 +10,12 @@ I made this repo very personal so I wouldn't suggest you to fork this repo. Inst
 
 ## Running script on a new machine
 
+New machines usually does not include crucial Developer tools, so first run:
+
+`xcode-select install`
+
+After that `git` should be available, so continue by running:
+
 `git clone https://github.com/mkautzmann/dotfiles.git && cd dotfiles && source bootstrap.sh`
 
 The OSX defaults
