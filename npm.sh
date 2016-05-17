@@ -20,4 +20,5 @@ sudo npm install -g react-native-cli
 sudo npm install -g supervisor
 sudo npm install -g uglify-js
 sudo npm install -g vtop
+sudo npm install -g webpack
 sudo npm install -g yo
