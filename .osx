@@ -560,7 +560,7 @@ sudo mdutil -E / > /dev/null
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
-# Use the Dracula theme by default in Terminal.app
+# Use the OneDark theme by default in Terminal.app
 osascript <<EOD
 
 tell application "Terminal"
@@ -568,7 +568,7 @@ tell application "Terminal"
 	local allOpenedWindows
 	local initialOpenedWindows
 	local windowID
-	set themeName to "Dracula"
+	set themeName to "OneDark"
 
 	(* Store the IDs of all the open terminal windows. *)
 	set initialOpenedWindows to id of every window
