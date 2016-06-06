@@ -731,20 +731,6 @@ defaults write com.operasoftware.Opera PMPrintingExpandedStateForPrint2 -boolean
 defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2 -boolean true
 
 ###############################################################################
-# Atom Editor                                                                 #
-###############################################################################
-
-# Sync Atom Editor settings and plugins from Dropbox
-ln -s ~/Dropbox/ATOM/atomconfig/.atom ~/.atom 2> /dev/null
-
-###############################################################################
-# Sublime Text                                                                #
-###############################################################################
-
-# Sync Sublime Text settings and packages from Dropbox
-ln -s ~/Dropbox/Sublime/User ~/Library/Application\ Support/Sublime\ Text*/Packages/User 2> /dev/null
-
-###############################################################################
 # Transmission.app                                                            #
 ###############################################################################
 
