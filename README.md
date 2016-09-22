@@ -38,6 +38,10 @@ PIP
 
 `./pip.sh`
 
+VIM
+
+`./vim.sh`
+
 ## If you decide to fork this repo
 
 If you are forking my repo instead of the original one remember to change the `.extras` file, there I specify the author (myself) of the commits to git.

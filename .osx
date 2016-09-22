@@ -14,11 +14,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
-# Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "nexus"
-sudo scutil --set HostName "nexus"
-sudo scutil --set LocalHostName "nexus"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "nexus"
+# Copy fonts
+cp ./fonts/* /Library/Fonts/
 
 # Set standby delay to 24 hours (default is 1 hour)
 sudo pmset -a standbydelay 86400
@@ -49,7 +46,7 @@ sudo nvram SystemAudioVolume=" "
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
 
-# Always show scrollbars
+# Scroll bars when scrolling
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
 
@@ -566,7 +563,7 @@ sudo mdutil -E / > /dev/null
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
-# Use the Dracula theme by default in Terminal.app
+# Use the OneDark theme by default in Terminal.app
 osascript <<EOD
 
 tell application "Terminal"
@@ -574,7 +571,7 @@ tell application "Terminal"
 	local allOpenedWindows
 	local initialOpenedWindows
 	local windowID
-	set themeName to "Dracula"
+	set themeName to "OneDark"
 
 	(* Store the IDs of all the open terminal windows. *)
 	set initialOpenedWindows to id of every window
@@ -737,20 +734,6 @@ defaults write com.operasoftware.Opera PMPrintingExpandedStateForPrint2 -boolean
 defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2 -boolean true
 
 ###############################################################################
-# Atom Editor                                                                 #
-###############################################################################
-
-# Sync Atom Editor settings and plugins from Dropbox
-ln -s ~/Dropbox/ATOM/atomconfig/.atom ~/.atom 2> /dev/null
-
-###############################################################################
-# Sublime Text                                                                #
-###############################################################################
-
-# Sync Sublime Text settings and packages from Dropbox
-ln -s ~/Dropbox/Sublime/User ~/Library/Application\ Support/Sublime\ Text*/Packages/User 2> /dev/null
-
-###############################################################################
 # Transmission.app                                                            #
 ###############################################################################
 
@@ -795,13 +778,8 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 defaults write com.twitter.twitter-mac HideInBackground -bool true
 
 ###############################################################################
-# Kill affected applications                                                  #
+# Reboot machine                                                 #
 ###############################################################################
 
-for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-	"Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
-	"Opera" "Safari" "SystemUIServer" "Terminal" \
-	"Transmission" "Twitter" "iCal"; do
-	killall "${app}" > /dev/null 2>&1
-done
-echo "Done. Note that some of these changes require a logout/restart to take effect."
+echo "Done! Rebooting the mac."
+sudo reboot

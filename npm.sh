@@ -15,7 +15,10 @@ sudo npm install -g grunt-cli
 sudo npm install -g htmlhint
 sudo npm install -g jshint
 sudo npm install -g mocha
+sudo npm install -g n
+sudo npm install -g npm-which
 sudo npm install -g plato
+sudo npm install -g react-native-cli
 sudo npm install -g supervisor
 sudo npm install -g uglify-js
 sudo npm install -g vtop
