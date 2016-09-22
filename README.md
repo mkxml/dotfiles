@@ -1,6 +1,6 @@
 # Matheus' dotfiles
 
-Personal dotfiles for my OSX environment. Strongly based on @mathiasbynens [dotfiles](https://github.com/mathiasbynens/dotfiles) repo.
+Personal dotfiles for my macOS environment. Strongly based on @mathiasbynens [dotfiles](https://github.com/mathiasbynens/dotfiles) repo.
 
 ## Disclaimer
 
@@ -18,9 +18,9 @@ After that `git` should be available, so continue by running:
 
 `git clone https://github.com/mkautzmann/dotfiles.git && cd dotfiles && source bootstrap.sh`
 
-The OSX defaults
+The macOS defaults
 
-`./.osx`
+`./.macOS`
 
 Brew
 
@@ -48,7 +48,7 @@ If you are forking my repo instead of the original one remember to change the `.
 
 Also, you may want to change the `.path` to best suit your environment.
 
-Remember to check `.osx` as well because there are some options there that are related to personal taste.
+Remember to check `.macOS` as well because there are some options there that are related to personal taste.
 
 ## Original Author
 
