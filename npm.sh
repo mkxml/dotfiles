@@ -14,6 +14,7 @@ sudo npm install -g express
 sudo npm install -g grunt-cli
 sudo npm install -g htmlhint
 sudo npm install -g jshint
+sudo npm install -g karma-cli
 sudo npm install -g mocha
 sudo npm install -g n
 sudo npm install -g npm-which
