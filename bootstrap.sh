@@ -10,7 +10,10 @@ function doIt() {
 	if [ "$(which brew)" = "brew not found" ] || ["$(which brew)" = ""]; then
 		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	fi;
+  # Install NVM
   curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+  # Get tmux package manager ready
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 	source ~/.bash_profile;
 }
 
