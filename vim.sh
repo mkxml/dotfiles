@@ -8,4 +8,4 @@ vim +PluginInstall +qall
 cp ~/themes/vim-airline/onedark.vim ~/.vim/bundle/vim-airline-themes/autoload/airline/themes/onedark.vim
 
 # Compile YouCompleteMe plugin
-~/.vim/bundle/YouCompleteMe/install.py --cland-completer --tern-completer
+~/.vim/bundle/YouCompleteMe/install.py --clang-completer --tern-completer
