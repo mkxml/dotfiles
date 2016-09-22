@@ -121,7 +121,6 @@ brew cask install firefox
 brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install java
-brew cask install moom
 brew cask install opera
 brew cask install skype
 brew cask install spotify
