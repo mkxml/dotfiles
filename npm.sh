@@ -1,26 +1,24 @@
 # Install useful Node.JS modules globally
 
-sudo -v
-
-sudo npm install -g babel
-sudo npm install -g bower
-sudo npm install -g browserify
-sudo npm install -g coffee-script
-sudo npm install -g coffeelint
-sudo npm install -g cordova
-sudo npm install -g csslint
-sudo npm install -g docpad
-sudo npm install -g express
-sudo npm install -g grunt-cli
-sudo npm install -g htmlhint
-sudo npm install -g jshint
-sudo npm install -g karma-cli
-sudo npm install -g mocha
-sudo npm install -g npm-which
-sudo npm install -g plato
-sudo npm install -g react-native-cli
-sudo npm install -g supervisor
-sudo npm install -g uglify-js
-sudo npm install -g vtop
-sudo npm install -g webpack
-sudo npm install -g yo
+npm install -g babel
+npm install -g bower
+npm install -g browserify
+npm install -g coffee-script
+npm install -g coffeelint
+npm install -g cordova
+npm install -g csslint
+npm install -g docpad
+npm install -g express
+npm install -g grunt-cli
+npm install -g htmlhint
+npm install -g jshint
+npm install -g karma-cli
+npm install -g mocha
+npm install -g npm-which
+npm install -g plato
+npm install -g react-native-cli
+npm install -g supervisor
+npm install -g uglify-js
+npm install -g vtop
+npm install -g webpack
+npm install -g yo
