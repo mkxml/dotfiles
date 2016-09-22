@@ -10,6 +10,7 @@ function doIt() {
 	if [ "$(which brew)" = "brew not found" ] || ["$(which brew)" = ""]; then
 		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	fi;
+  curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 	source ~/.bash_profile;
 }
 
