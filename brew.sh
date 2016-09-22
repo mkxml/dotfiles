@@ -35,12 +35,12 @@ brew install wget --with-iri
 brew install ringojs
 brew install narwhal
 
-# Install more recent versions of some OS X tools.
+# Install more recent versions of some macOS tools.
 brew install macvim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
+brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -110,26 +110,19 @@ brew install node
 brew install caskroom/cask/brew-cask
 
 # Install some useful GUI-based apps
-brew cask install adobe-creative-cloud
 brew cask install alfred
 brew cask install android-studio
 brew cask install appcleaner
-brew cask install atom
-brew cask install clion
-brew cask install cocos-code-ide
 brew cask install dropbox
-brew cask install eclipse-java
 brew cask install filezilla
 brew cask install firefox
 brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install java
-brew cask install libreoffice
 brew cask install moom
 brew cask install opera
 brew cask install skype
 brew cask install spotify
-brew cask install sublime-text
 brew cask install virtualbox
 
 # Remove outdated versions from the cellar.
