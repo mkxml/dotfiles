@@ -1,3 +1,6 @@
+# Install Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 # Install tmux plugins
 ~/.tmux/plugins/tpm/bin/install_plugins
 
