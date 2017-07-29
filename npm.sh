@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Install useful Node.JS modules globally
 
 npm install -g babel

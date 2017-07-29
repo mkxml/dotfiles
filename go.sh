@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Install Go CLI tools
 
 # Install cfssl and extra tools
