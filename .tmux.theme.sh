@@ -1,7 +1,8 @@
-tm_icon="🚀 "
+tm_icon="🇧🇷 "
 tm_color_active=colour39
 tm_color_inactive=colour241
 tm_color_feature=colour198
+tm_color_battery=colour155
 tm_color_music=colour198
 tm_active_border_color=colour39
 
@@ -14,7 +15,6 @@ tm_separator_right_thin="❯"
 set -g status-left-length 32
 set -g status-right-length 150
 set -g status-interval 5
-
 
 # default statusbar colors
 # set-option -g status-bg colour0
@@ -48,7 +48,7 @@ set-option -g display-panes-colour $tm_color_inactive
 set-window-option -g clock-mode-colour $tm_color_active
 
 tm_tunes="#[fg=$tm_color_music]#(osascript ~/applescripts/tunes.scpt)"
-tm_battery="#(~/battery_indicator.sh)"
+tm_battery="#[fg=$tm_color_battery]#(pmset -g batt | ~/battery_indicator.rb)"
 
 tm_date="#[fg=$tm_color_inactive] %R %d %b"
 tm_host="#[fg=$tm_color_feature,bold]#h"
