@@ -8,39 +8,89 @@ These are my dotfiles that I use when setting up a new machine or when restoring
 
 I made this repo very personal so I wouldn't suggest you to fork this repo. Instead fork Mathias' one, as it is designed for customization.
 
-## Running script on a new machine
+## Set up a new machine (first time usage)
 
 New machines usually does not include crucial Developer tools, so first run:
 
-`xcode-select install`
+```bash
+xcode-select install
+```
 
-After that `git` should be available, so continue by running:
+`git` should be available now, so proceed by running:
 
-`git clone https://github.com/mkautzmann/dotfiles.git && cd dotfiles && source bootstrap.sh`
+```bash
+git clone https://github.com/mkxml/dotfiles.git && cd dotfiles && source bootstrap.sh
+```
 
-The macOS defaults
+If everything went OK so far, run:
 
-`./.macOS`
+```bash
+~/install.sh
+```
 
-Brew
+or (if the machine has an SSD):
 
-`./brew.sh`
+```bash
+~/install.sh --ssd
+```
 
-NPM
+### Next steps
 
-`./npm.sh`
+- Configure iCloud;
+- Download your favorite App Store apps;
+- Set up your `~/.secrets` with your secret env variables;
+- Choose a cool wallpaper;
+- Enjoy!
 
-Gems
+## Useful scripts for machine maintenance
 
-`./gems.sh`
+Reinforce the macOS default config (also clears the dock)
 
-PIP
+```bash
+~/osconfig.sh
+```
 
-`./pip.sh`
+Brew (install/update brew and all formulas)
 
-VIM
+```bash
+~/brew.sh
+```
 
-`./vim.sh`
+NVM (install/update node version and migrate all global pkgs)
+
+```bash
+~/nvm.sh
+```
+
+NPM (install/update all nodejs global pkgs)
+
+```bash
+~/npm.sh
+```
+
+Gems (install/update all ruby gems)
+
+```bash
+~/gems.sh
+```
+
+PIP (install/update all python tools)
+
+```bash
+~/pip.sh
+```
+
+Go (install/update all go tools)
+
+```bash
+~/go.sh
+```
+
+VIM (install/update all vim plugins)
+
+```bash
+~/vim.sh
+```
 
 ## If you decide to fork this repo
 
@@ -48,7 +98,7 @@ If you are forking my repo instead of the original one remember to change the `.
 
 Also, you may want to change the `.path` to best suit your environment.
 
-Remember to check `.macOS` as well because there are some options there that are related to personal taste.
+Remember to check `osconfig.sh` as well because there are some options there that are related to personal taste.
 
 ## Original Author
 
@@ -58,4 +108,4 @@ Remember to check `.macOS` as well because there are some options there that are
 
 ## Modified by
 
-[Matheus Kautzmann](https://github.com/mkautzmann)
+[Matheus Kautzmann](https://github.com/mkxml)
