@@ -9,4 +9,6 @@ sudo easy_install pip
 pip install --upgrade awscli
 pip install --upgrade cppclient
 pip install --upgrade httpie
+pip install --upgrade mycli
+pip install --upgrade speedtest-cli
 pip install --upgrade virtualenv

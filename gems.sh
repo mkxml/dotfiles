@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Install some gems
 sudo -v
 

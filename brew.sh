@@ -20,27 +20,30 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
 # Install Bash 4.
-# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
 brew tap homebrew/versions
 brew install bash-completion2
 
+# Switch to using brew-installed bash as default shell
+if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
+  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
+  chsh -s /usr/local/bin/bash;
+fi;
+
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
+# Install GnuPG to enable PGP-signing commits.
+brew install gnupg
 
 # Install more recent versions of some macOS tools.
 brew install macvim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
+brew install grep
+brew install openssh
+brew install screen
 brew install homebrew/php/php56 --with-gmp
+brew install python3
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -82,54 +85,62 @@ brew install android-sdk
 brew install dark-mode
 brew install erlang
 brew install elixir
-#brew install exiv2
 brew install ffmpeg
 brew install git
 brew install git-lfs
+brew install hub
 brew install imagemagick --with-webp
 brew install lua
 brew install libbpg
 brew install lynx
+brew install openvpn
 brew install p7zip
 brew install pigz
 brew install pv
 brew install rebar
 brew install rename
-brew install rhino
-brew install speedtest_cli
 brew install ssh-copy-id
 brew install tmux
 brew install tree
 brew install testssl
 brew install vbindiff
 brew install webkit2png
+brew install yarn
 brew install zopfli
-
-# Install Node.JS and NPM
-brew install node
 
 # Install brew cask to install some GUI-based apps later
 brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
 
 # Install some useful GUI-based apps
+brew cask install java
 brew cask install alfred
 brew cask install android-studio
 brew cask install appcleaner
+brew cask install electrum
+brew cask install dash
+brew cask install discord
+brew cask install docker
 brew cask install dropbox
 brew cask install filezilla
 brew cask install firefox
 brew cask install google-chrome
 brew cask install google-chrome-canary
-brew cask install java
+brew cask install mysql-utilities
+brew cask install mysqlworkbench
 brew cask install opera
+brew cask install postman
+brew cask install safari-technology-preview
+brew cask install sketch
 brew cask install skype
+brew cask install slack
+brew cask install tunnelblick
 brew cask install spotify
 brew cask install virtualbox
+brew cask install visual-studio-code
+brew cask install vlc
 
 # Remove outdated versions from the cellar.
 brew cleanup
-brew cask cleanup
 
-# Reboot the machine
-echo "Rebooting machine..."
-sudo shutdown -r now
+echo "brew.sh done! You may reboot when possible."
