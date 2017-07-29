@@ -82,6 +82,7 @@ brew install ack
 brew install android-ndk
 brew install android-platform-tools
 brew install android-sdk
+brew install cmake
 brew install dark-mode
 brew install erlang
 brew install elixir
@@ -93,12 +94,14 @@ brew install imagemagick --with-webp
 brew install lua
 brew install libbpg
 brew install lynx
+brew install ninja
 brew install openvpn
 brew install p7zip
 brew install pigz
 brew install pv
 brew install rebar
 brew install rename
+brew install rust
 brew install ssh-copy-id
 brew install tmux
 brew install tree
