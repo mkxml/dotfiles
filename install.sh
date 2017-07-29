@@ -26,7 +26,7 @@ source ~/go.sh
 source ~/vim.sh
 
 # OS config
-source ~/osconfig.sh
+source ~/osconfig.sh $1
 
 # Reboot machine
 echo "All set! Rebooting the mac."
