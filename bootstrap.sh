@@ -13,11 +13,18 @@ function doIt() {
 	if [ "$(which brew)" = "brew not found" ] || ["$(which brew)" = ""]; then
 		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	fi;
-  # Install NVM
-  curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
   # Get tmux package manager ready
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  # Install NVM
+  curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+  # Install go with brew before bash profile
+  brew install go
 	source ~/.bash_profile;
+  # Give installation files execute permission
+  for file in ~/{osconfig,install,brew,nvm,npm,pip,gems,go,vim}.sh; do
+    chmod +x $file;
+  done;
+  unset file;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

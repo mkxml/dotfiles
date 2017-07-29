@@ -183,6 +183,14 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 1
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
 ###############################################################################
+# Network                                                                     #
+###############################################################################
+
+# Set up default DNS servers
+networksetup -setdnsservers Ethernet 8.8.8.8 8.8.4.4 208.67.222.222
+networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4 208.67.222.222
+
+###############################################################################
 # Finder                                                                      #
 ###############################################################################
 
@@ -676,8 +684,7 @@ defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
 
 ###############################################################################
-# Reboot machine                                                 #
+# END                                                                         #
 ###############################################################################
 
-echo "Done! Rebooting the mac."
-sudo reboot
+echo "OS config done!"
