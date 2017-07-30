@@ -18,6 +18,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Conditional SSD options                                                     #
 ###############################################################################
 if [ "$1" == "--ssd" ]; then
+  echo "Configuring SSD options"
   # Force TRIM activation
   sudo trimforce enable
   # Disable hibernation (speeds up entering sleep mode)
