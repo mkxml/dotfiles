@@ -13,7 +13,7 @@ I made this repo very personal so I wouldn't suggest you to fork this repo. Inst
 New machines usually does not include crucial Developer tools, so first run:
 
 ```bash
-xcode-select install
+xcode-select --install
 ```
 
 `git` should be available now, so proceed by running:
