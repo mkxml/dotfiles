@@ -3,9 +3,8 @@
 sudo -v
 
 # Install some tooling with PIP
-pip install --upgrade awscli
-pip install --upgrade cppclient
-pip install --upgrade httpie
-pip install --upgrade mycli
-pip install --upgrade speedtest-cli
-pip install --upgrade virtualenv
+sudo pip2 install --upgrade awscli
+sudo pip2 install --upgrade httpie
+sudo pip2 install --upgrade mycli
+sudo pip2 install --upgrade speedtest-cli
+sudo pip2 install --upgrade virtualenv
