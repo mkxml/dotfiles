@@ -31,6 +31,9 @@ if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
   chsh -s /usr/local/bin/bash;
 fi;
 
+# Prevents tmux from failing
+brew install reattach-to-user-namespace
+
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
