@@ -2,9 +2,6 @@
 
 sudo -v
 
-# Install PIP
-sudo easy_install pip
-
 # Install some tooling with PIP
 pip install --upgrade awscli
 pip install --upgrade cppclient

@@ -46,6 +46,7 @@ brew install grep
 brew install openssh
 brew install screen
 brew install homebrew/php/php56 --with-gmp
+brew reinstall python
 brew install python3
 
 # Install font tools.
