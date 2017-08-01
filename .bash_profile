@@ -1,6 +1,3 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
-
 export GOPATH="$(go env GOPATH)";
 
 # Add go tools to the $PATH
