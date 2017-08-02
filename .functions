@@ -207,13 +207,13 @@ function s() {
 	fi;
 }
 
-# `a` with no arguments opens the current directory in Atom Editor, otherwise
+# `vsc` with no arguments opens the current directory in Visual Studio Code, otherwise
 # opens the given location
-function a() {
+function vsc() {
 	if [ $# -eq 0 ]; then
-		atom .;
+		code .;
 	else
-		atom "$@";
+		code "$@";
 	fi;
 }
 
