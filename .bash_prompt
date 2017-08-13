@@ -88,8 +88,6 @@ fi;
 PS1="\[\033]0;\w\007\]";
 PS1+="\[${bold}\]\n"; # newline
 PS1+="\[${userStyle}\]\u"; # username
-PS1+="\[${gray}\] at ";
-PS1+="\[${hostStyle}\]\h"; # host
 PS1+="\[${gray}\] in ";
 PS1+="\[${purple}\]\w"; # working directory
 PS1+="\$(prompt_git \"${gray} on ${cyan}\")"; # Git repository details
