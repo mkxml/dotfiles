@@ -132,8 +132,6 @@ set noshowmode
 set clipboard=unnamed
 " Enhance command-line completion
 set wildmenu
-" Allow cursor keys in insert mode
-set esckeys
 " Allow backspace in insert mode
 set backspace=indent,eol,start
 " Optimize for fast terminal connections
@@ -210,7 +208,7 @@ endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 " Highlight max column width
-highlight ColorColumn ctermbg=gray
+highlight ColorColumn ctermbg=grey
 set colorcolumn=100
 
 " Strip trailing whitespace (,ss)
@@ -234,6 +232,9 @@ map <c-n> :tabnew<cr>
 " Allows quick session recovery
 map <F2> :mksession! ~/.vim/session <CR>
 map <F3> :source ~/.vim/session <CR>
+
+" Map ESC key to jk in insert mode
+imap jk <Esc>
 
 " Automatic commands
 if has("autocmd")
