@@ -57,6 +57,21 @@
 	# a.k.a. ‘delete merged’
 	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
+  # Quickly create an WIP commit
+  wip = "!git add -u && git commit -m \"WIP\""
+
+  # Show last commit
+  last = "!git log -1 HEAD"
+
+  # Unstage changes
+  unstage = "!git reset HEAD --"
+
+  # Quickly undo last commit but keeps the changes in workdir
+  undo = "!git reset HEAD~1 --mixed"
+
+  # Sync branch and submodules with remote origin
+  up = "!git pull --rebase --prune $@ && git submodule update --init --recursive"
+
 	# List contributors with number of commits
 	contributors = shortlog --summary --numbered
 
