@@ -139,7 +139,6 @@ brew cask install skype
 brew cask install slack
 brew cask install tunnelblick
 brew cask install spotify
-brew cask install virtualbox
 brew cask install visual-studio-code
 brew cask install vlc
 
