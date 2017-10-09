@@ -83,9 +83,6 @@ brew install xz
 
 # Install other useful binaries.
 brew install ack
-brew install android-ndk
-brew install android-platform-tools
-brew install android-sdk
 brew install cmake
 brew install dark-mode
 brew install erlang
@@ -122,7 +119,6 @@ brew tap caskroom/versions
 # Install some useful GUI-based apps
 brew cask install java
 brew cask install alfred
-brew cask install android-studio
 brew cask install appcleaner
 brew cask install electrum
 brew cask install dash
