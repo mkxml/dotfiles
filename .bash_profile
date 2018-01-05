@@ -1,3 +1,12 @@
+# Check if not inside tmux start it
+if [[ -z "$TMUX" ]]; then
+    if tmux has-session 2>/dev/null; then
+        exec tmux attach
+    else
+        exec tmux
+    fi
+fi
+
 export GOPATH="$(go env GOPATH)";
 
 # Add go tools to the $PATH
