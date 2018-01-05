@@ -37,7 +37,6 @@ or (if the machine has an SSD):
 ### Next steps
 
 - Configure iCloud;
-- Download your favorite App Store apps;
 - Set up your `~/.secrets` with your secret env variables;
 - Choose a cool wallpaper;
 - Enjoy!
@@ -90,6 +89,12 @@ VIM (install/update all vim plugins)
 
 ```bash
 ~/vim.sh
+```
+
+MAS (Mac App Store apps)
+
+```bash
+~/mas.sh
 ```
 
 ## If you decide to fork this repo
