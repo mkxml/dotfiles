@@ -140,7 +140,6 @@ brew cask install postman
 brew cask install safari-technology-preview
 brew cask install sketch
 brew cask install skype
-brew cask install slack
 brew cask install tunnelblick
 brew cask install spotify
 brew cask install visual-studio-code
