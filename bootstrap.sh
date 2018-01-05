@@ -21,9 +21,12 @@ function doIt() {
   brew install go
 	source ~/.bash_profile;
   # Give installation files execute permission
-  for file in ~/{osconfig,install,brew,nvm,npm,pip,gems,go,vim}.sh; do
+  for file in ~/{osconfig,install,brew,nvm,npm,pip,gems,go,vim,mas}.sh; do
     chmod +x $file;
   done;
+  # Setup keyboard
+  chmod +x ~/.keyboard/script/setup
+  ~/.keyboard/script/setup
   unset file;
 }
 
