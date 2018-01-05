@@ -87,6 +87,7 @@ brew install cmake
 brew install dark-mode
 brew install erlang
 brew install elixir
+brew install fd
 brew install ffmpeg
 brew install git
 brew install git-lfs
