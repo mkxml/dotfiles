@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Personal account, may change it
 mas signin matheusrks@hotmail.com
 
