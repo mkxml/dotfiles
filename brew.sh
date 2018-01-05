@@ -96,6 +96,7 @@ brew install imagemagick --with-webp
 brew install lua
 brew install libbpg
 brew install lynx
+brew install mas
 brew install ninja
 brew install openvpn
 brew install p7zip
@@ -122,6 +123,7 @@ brew cask install java
 brew cask install alfred
 brew cask install appcleaner
 brew cask install electrum
+brew cask install etcher
 brew cask install dash
 brew cask install discord
 brew cask install docker
@@ -130,6 +132,7 @@ brew cask install filezilla
 brew cask install firefox
 brew cask install google-chrome
 brew cask install google-chrome-canary
+brew cask install mounty
 brew cask install mysql-utilities
 brew cask install mysqlworkbench
 brew cask install opera
