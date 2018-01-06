@@ -1,10 +1,13 @@
-# Check if not inside tmux start it
-if [[ -z "$TMUX" ]]; then
-    if tmux has-session 2>/dev/null; then
-        exec tmux attach
-    else
-        exec tmux
-    fi
+# Check if tmux exists
+if [ -x "$(command -v tmux)" ]; then
+  # Check if not inside tmux start it
+  if [[ -z "$TMUX" ]]; then
+      if tmux has-session 2>/dev/null; then
+          exec tmux attach
+      else
+          exec tmux
+      fi
+  fi
 fi
 
 export GOPATH="$(go env GOPATH)";
