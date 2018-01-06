@@ -25,6 +25,9 @@ source ~/go.sh
 # Configure vim and install plugins
 source ~/vim.sh
 
+# Run mas
+source ~/mas.sh
+
 # OS config
 source ~/osconfig.sh $1
 
