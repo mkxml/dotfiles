@@ -26,7 +26,9 @@ function doIt() {
   done;
   # Setup keyboard
   chmod +x ~/.keyboard/script/setup
-  ~/.keyboard/script/setup
+  mkdir -p ~/.config
+  cd ~/.keyboard
+  script/setup
   unset file;
 }
 
