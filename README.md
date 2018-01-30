@@ -85,6 +85,12 @@ Go (install/update all go tools)
 ~/go.sh
 ```
 
+Rust (install/update all rust tools)
+
+```bash
+~/rust.sh
+```
+
 VIM (install/update all vim plugins)
 
 ```bash

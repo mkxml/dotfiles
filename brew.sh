@@ -105,7 +105,6 @@ brew install pigz
 brew install pv
 brew install rebar
 brew install rename
-brew install rust
 brew install ssh-copy-id
 brew install tmux
 brew install tree

@@ -22,6 +22,9 @@ source ~/gems.sh
 # Install go tools
 source ~/go.sh
 
+# Install rust tools
+source ~/rust.sh
+
 # Configure vim and install plugins
 source ~/vim.sh
 
