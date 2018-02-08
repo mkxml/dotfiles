@@ -140,3 +140,8 @@ alias ss="open -a ScreenSaverEngine"
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+# Handy git aliases
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
