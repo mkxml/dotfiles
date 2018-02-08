@@ -122,6 +122,7 @@ brew tap caskroom/versions
 brew cask install java
 brew cask install alfred
 brew cask install appcleaner
+brew cask install bartender
 brew cask install electrum
 brew cask install etcher
 brew cask install dash
