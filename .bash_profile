@@ -15,6 +15,9 @@ export GOPATH="$(go env GOPATH)";
 # Add go tools to the $PATH
 export PATH="$GOPATH/bin:$PATH";
 
+# Add pip tools to the $PATH
+export PATH="$HOME/Library/Python/2.7/bin:$PATH";
+
 export ANDROID_HOME="$HOME/Library/Android/sdk";
 export MAVEN_OPTS="-Xms1024m -Xmx2048m -Xss2048k";
 

@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-sudo -v
-
 # Install some tooling with PIP
-sudo pip install --upgrade --user awscli
-sudo pip install --upgrade --user httpie
-sudo pip install --upgrade --user mycli
-sudo pip install --upgrade --user speedtest-cli
-sudo pip install --upgrade --user virtualenv
+pip install --upgrade --user awscli
+pip install --upgrade --user httpie
+pip install --upgrade --user mycli
+pip install --upgrade --user speedtest-cli
+pip install --upgrade --user virtualenv

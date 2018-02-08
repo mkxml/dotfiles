@@ -19,6 +19,8 @@ function doIt() {
   curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
   # Install go with brew before bash profile
   brew install go
+  # Install pip
+  sudo easy_install pip
 	source ~/.bash_profile;
   # Give installation files execute permission
   for file in ~/{osconfig,install,brew,nvm,npm,pip,gems,go,rust,vim,mas}.sh; do
