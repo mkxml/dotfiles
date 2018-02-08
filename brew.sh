@@ -146,6 +146,7 @@ brew cask install tunnelblick
 brew cask install spotify
 brew cask install visual-studio-code
 brew cask install vlc
+brew cask install whatsapp
 
 # Remove outdated versions from the cellar.
 brew cleanup
