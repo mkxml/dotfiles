@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Personal account, may change it
-mas signin matheusrks@hotmail.com
-
 mas install 421131143 # MPlayerX
 mas install 451444120 # Memory Clean
 mas install 425264550 # Blackmagic Disk Speed Test
