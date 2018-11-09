@@ -5,7 +5,6 @@ mas install 451444120 # Memory Clean
 mas install 425264550 # Blackmagic Disk Speed Test
 mas install 407963104 # Pixelmator
 mas install 497799835 # Xcode
-mas install 404010395 # TextWrangler
 mas install 585829637 # Todoist
 mas install 557168941 # Tweetbot
 mas install 787259510 # Favicon Creator
@@ -22,7 +21,6 @@ mas install 747648890 # Telegram
 mas install 926121450 # Coinverter
 mas install 411643860 # DaisyDisk
 mas install 409203825 # Numbers
-mas install 793991304 # Chegou
 mas install 425955336 # Skitch
 mas install 409183694 # Keynote
 mas install 443987910 # 1Password
