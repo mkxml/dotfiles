@@ -169,6 +169,7 @@ brew cask install unshaky
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install whatsapp
+brew cask install wireshark
 brew cask install zotero
 
 # Remove outdated versions from the cellar.
