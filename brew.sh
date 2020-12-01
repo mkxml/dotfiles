@@ -162,6 +162,7 @@ brew cask install sketch
 brew cask install skype
 brew cask install soapui
 brew cask install steam
+brew cask install tinymediamanager
 brew cask install tunnelblick
 brew cask install spotify
 brew cask install unshaky
