@@ -143,6 +143,7 @@ brew cask install imageoptim
 brew cask install insomnia
 brew cask install keyboard-cleaner
 brew cask install microsoft-office
+brew cask install microsoft-teams
 brew cask install mounty
 brew cask install mysql-utilities
 brew cask install mysqlworkbench
