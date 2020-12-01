@@ -120,6 +120,7 @@ brew tap caskroom/versions
 
 # Install some useful GUI-based apps
 brew cask install airflow
+brew cask install arduino
 brew cask install java
 brew cask install alfred
 brew cask install appcleaner
