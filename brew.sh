@@ -153,6 +153,7 @@ brew cask install safari-technology-preview
 brew cask install sketch
 brew cask install skype
 brew cask install soapui
+brew cask install steam
 brew cask install tunnelblick
 brew cask install spotify
 brew cask install unshaky
