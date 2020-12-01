@@ -138,6 +138,7 @@ brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install google-backup-and-sync
 brew cask install iina
+brew cask install imageoptim
 brew cask install insomnia
 brew cask install keyboard-cleaner
 brew cask install microsoft-office
