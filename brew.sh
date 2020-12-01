@@ -136,6 +136,7 @@ brew cask install firefox
 brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install google-backup-and-sync
+brew cask install iina
 brew cask install microsoft-office
 brew cask install mounty
 brew cask install mysql-utilities
