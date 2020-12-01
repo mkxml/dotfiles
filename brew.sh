@@ -130,6 +130,7 @@ brew cask install balenaetcher
 brew cask install bartender
 brew cask install coconutbattery
 brew cask install cyberduck
+brew cask install eclipse-java
 brew cask install electrum
 brew cask install elgato-thunderbolt-dock
 brew cask install dash
