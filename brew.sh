@@ -152,6 +152,8 @@ brew cask install mysql-utilities
 brew cask install mysqlworkbench
 brew cask install notion
 brew cask install opera
+brew cask install parallels
+brew cask install parallels-toolbox
 brew cask install postico
 brew cask install postman
 brew cask install safari-technology-preview
