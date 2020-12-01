@@ -128,13 +128,13 @@ brew cask install appcleaner
 brew cask install balenaetcher
 brew cask install bartender
 brew cask install coconutbattery
+brew cask install cyberduck
 brew cask install electrum
 brew cask install elgato-thunderbolt-dock
 brew cask install dash
 brew cask install discord
 brew cask install docker
 brew cask install dropbox
-brew cask install filezilla
 brew cask install firefox
 brew cask install forticlient
 brew cask install google-chrome
