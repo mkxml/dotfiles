@@ -142,6 +142,7 @@ brew cask install mounty
 brew cask install mysql-utilities
 brew cask install mysqlworkbench
 brew cask install opera
+brew cask install postico
 brew cask install postman
 brew cask install safari-technology-preview
 brew cask install sketch
