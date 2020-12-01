@@ -149,6 +149,7 @@ brew cask install microsoft-teams
 brew cask install mounty
 brew cask install mysql-utilities
 brew cask install mysqlworkbench
+brew cask install notion
 brew cask install opera
 brew cask install postico
 brew cask install postman
