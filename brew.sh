@@ -121,6 +121,7 @@ brew tap caskroom/versions
 # Install some useful GUI-based apps
 brew cask install java
 brew cask install airflow
+brew cask install anaconda
 brew cask install android-studio
 brew cask install arduino
 brew cask install alfred
