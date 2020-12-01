@@ -15,8 +15,11 @@ export GOPATH="$(go env GOPATH)";
 # Add go tools to the $PATH
 export PATH="$GOPATH/bin:$PATH";
 
-# Add pip tools to the $PATH
-export PATH="$HOME/Library/Python/2.7/bin:$PATH";
+# Add anaconda tools
+# export PATH="/usr/local/anaconda3/bin:$PATH"  # commented out by conda initialize;
+
+# Add android platform tools to path
+export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH";
 
 export ANDROID_HOME="$HOME/Library/Android/sdk";
 export MAVEN_OPTS="-Xms1024m -Xmx2048m -Xss2048k";
@@ -66,3 +69,36 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+export PATH="$HOME/.cargo/bin:$PATH";
+export PATH="/usr/local/sbin:$PATH";
+
+# add mysql to PATH
+export PATH="/Applications/MySQLWorkbench.app/Contents/MacOS:$PATH";
+
+# Bash completion
+export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d";
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh";
+
+# NVM completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# RBENV
+eval "$(rbenv init -)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export PATH="/usr/local/opt/libpq/bin:$PATH"
