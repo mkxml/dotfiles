@@ -126,6 +126,7 @@ brew cask install appcleaner
 brew cask install bartender
 brew cask install coconutbattery
 brew cask install electrum
+brew cask install elgato-thunderbolt-dock
 brew cask install etcher
 brew cask install dash
 brew cask install discord
