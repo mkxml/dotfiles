@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Check whether we already have a node installation
 NODE_PATH=$(which node)

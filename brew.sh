@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Install command-line tools using Homebrew.
 
@@ -19,17 +19,6 @@ brew install moreutils
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
-# Install Bash 4.
-# running `chsh`.
-brew install bash
-brew tap homebrew/versions
-brew install bash-completion2
-
-# Switch to using brew-installed bash as default shell
-if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
-  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
-  chsh -s /usr/local/bin/bash;
-fi;
 
 # Prevents tmux from failing
 brew install reattach-to-user-namespace
@@ -84,6 +73,7 @@ brew install xz
 
 # Install other useful binaries.
 brew install ack
+brew install awscli
 brew install cmake
 brew install dark-mode
 brew install erlang
@@ -114,64 +104,61 @@ brew install webkit2png
 brew install yarn
 brew install zopfli
 
-# Install brew cask to install some GUI-based apps later
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
-
 # Install some useful GUI-based apps
-brew cask install java
-brew cask install airflow
-brew cask install anaconda
-brew cask install android-studio
-brew cask install arduino
-brew cask install alfred
-brew cask install appcleaner
-brew cask install balenaetcher
-brew cask install bartender
-brew cask install coconutbattery
-brew cask install cyberduck
-brew cask install eclipse-java
-brew cask install electrum
-brew cask install elgato-thunderbolt-dock
-brew cask install dash
-brew cask install discord
-brew cask install docker
-brew cask install dropbox
-brew cask install firefox
-brew cask install forticlient
-brew cask install google-chrome
-brew cask install google-chrome-canary
-brew cask install google-backup-and-sync
-brew cask install iina
-brew cask install imageoptim
-brew cask install insomnia
-brew cask install keyboard-cleaner
-brew cask install microsoft-office
-brew cask install microsoft-teams
-brew cask install mounty
-brew cask install mysql-utilities
-brew cask install mysqlworkbench
-brew cask install notion
-brew cask install opera
-brew cask install parallels
-brew cask install parallels-toolbox
-brew cask install postico
-brew cask install postman
-brew cask install safari-technology-preview
-brew cask install sketch
-brew cask install skype
-brew cask install soapui
-brew cask install steam
-brew cask install tinymediamanager
-brew cask install transmission
-brew cask install tunnelblick
-brew cask install spotify
-brew cask install unshaky
-brew cask install visual-studio-code
-brew cask install vlc
-brew cask install whatsapp
-brew cask install wireshark
-brew cask install zotero
+brew install --cask java
+brew install --cask airflow
+brew install --cask anaconda
+brew install --cask android-studio
+brew install --cask arduino
+brew install --cask alfred
+brew install --cask appcleaner
+brew install --cask balenaetcher
+brew install --cask bartender
+brew install --cask cleanmymac
+brew install --cask coconutbattery
+brew install --cask cyberduck
+brew install --cask eclipse-java
+brew install --cask electrum
+brew install --cask elgato-thunderbolt-dock
+brew install --cask dash
+brew install --cask discord
+brew install --cask docker
+brew install --cask dropbox
+brew install --cask firefox
+brew install --cask forticlient
+brew install --cask google-chrome
+brew install --cask google-chrome-canary
+brew install --cask google-backup-and-sync
+brew install --cask iina
+brew install --cask imageoptim
+brew install --cask iterm2
+brew install --cask insomnia
+brew install --cask keyboard-cleaner
+brew install --cask microsoft-office
+brew install --cask microsoft-teams
+brew install --cask mounty
+brew install --cask mysql-utilities
+brew install --cask mysqlworkbench
+brew install --cask notion
+brew install --cask opera
+brew install --cask parallels
+brew install --cask parallels-toolbox
+brew install --cask postico
+brew install --cask postman
+brew install --cask safari-technology-preview
+brew install --cask sketch
+brew install --cask skype
+brew install --cask soapui
+brew install --cask steam
+brew install --cask tinymediamanager
+brew install --cask transmission
+brew install --cask tunnelblick
+brew install --cask spotify
+brew install --cask visual-studio-code
+brew install --cask vlc
+brew install --cask whatsapp
+brew install --cask wireshark
+brew install --cask zotero
 
 # Remove outdated versions from the cellar.
 brew cleanup

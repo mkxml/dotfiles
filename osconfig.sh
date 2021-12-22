@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # This file is my preferences for macOS, based on Mathias' dotfiles repo with a few changes.
 

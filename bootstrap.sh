@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 cd "$(dirname "${BASH_SOURCE}")";
 
@@ -8,6 +8,7 @@ git pull origin master;
 cp ./fonts/* /Library/Fonts/
 
 function doIt() {
+  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
 		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
 	if [ "$(which brew)" = "brew not found" ] || ["$(which brew)" = ""]; then
@@ -21,7 +22,8 @@ function doIt() {
   brew install go
   # Install pip
   sudo easy_install pip
-	source ~/.bash_profile;
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+	source ~/.zshrc;
   # Give installation files execute permission
   for file in ~/{osconfig,install,brew,nvm,npm,pip,gems,go,rust,vim,mas}.sh; do
     chmod +x $file;
